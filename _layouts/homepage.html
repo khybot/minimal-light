@@ -34,6 +34,17 @@
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     {% endif %}
 
+    <style>
+      a.image.avatar,
+      a.image.avatar img {
+        border-radius: 8px !important; /* avatar 的角 */
+        padding: 0 !important;
+        width: clamp(90px, 15vw, 150px) !important; /* 最小70px，最大120px，随屏幕自适应 */
+        object-fit: cover;
+      }
+    </style>
+    <!-- 注释掉这几行则 avatar 使用模板默认样式 -->
+
   </head>
   <body>
 
